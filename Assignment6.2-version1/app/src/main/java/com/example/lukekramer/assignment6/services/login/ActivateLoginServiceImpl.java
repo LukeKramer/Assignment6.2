@@ -15,7 +15,12 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateLog
 /**
  * Created by lukekramer on 08/05/16.
  */
+
+//Justification Im using bound service because the database is being accessed and affected directly
+
 public class ActivateLoginServiceImpl extends Service implements ActivateLoginService{
+
+
     private final IBinder localBinder = new ActivateLoginServiceLocalBinder();
     private LoginRepository loginRepository;
 

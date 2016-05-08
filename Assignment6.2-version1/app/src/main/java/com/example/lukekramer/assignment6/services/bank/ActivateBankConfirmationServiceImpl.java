@@ -13,6 +13,8 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateBan
 /**
  * Created by lukekramer on 08/05/16.
  */
+//Justification Im using bound service because this service is bound directly to the ActivateClientService
+//and uses information from the ClientService to veryfy a user has a banking record
 public class ActivateBankConfirmationServiceImpl extends Service implements ActivateBankConfirmationService{
 
     private IBinder localbinder = new ActivateBankConfirmationServiceLocalBinder();

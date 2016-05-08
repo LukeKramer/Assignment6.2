@@ -13,6 +13,9 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateUse
 /**
  * Created by lukekramer on 08/05/16.
  */
+
+//Justification Im using bound service because this service is bound directly to the ActivateClientService
+//and is used in determining loan status
 public class ActivateUserTypeServiceImpl extends Service implements ActivateUserTypeService{
 
     private final IBinder localBinder = new ActivateUserTypeServiceLocalBinder();

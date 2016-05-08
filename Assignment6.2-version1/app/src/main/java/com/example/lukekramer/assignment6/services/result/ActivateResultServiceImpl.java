@@ -15,6 +15,9 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateRes
 /**
  * Created by lukekramer on 07/05/16.
  */
+
+//Justification Im using bound service because the database is being accessed and affected directly
+
 public class ActivateResultServiceImpl extends Service implements ActivateResultService{
 
     private final IBinder localBinder = new ActivateResultServiceLocalBinder();

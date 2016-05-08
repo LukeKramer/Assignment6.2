@@ -15,7 +15,12 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateCli
 /**
  * Created by lukekramer on 04/05/16.
  */
+
+//Justification Im using bound service because the database is being accessed and affected directly
+
 public class ActivateClientServiceImpl extends Service implements ActivateClientService{
+
+
 
     private final IBinder localBinder = new ActivateClientServiceLocalBinder();
     private PersonRepository personRepository;

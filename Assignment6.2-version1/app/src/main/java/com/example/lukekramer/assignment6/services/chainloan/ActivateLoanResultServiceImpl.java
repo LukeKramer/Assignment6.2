@@ -13,6 +13,8 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateLoa
 /**
  * Created by lukekramer on 08/05/16.
  */
+//Justification Im using bound service because this service is bound directly to the ActivateClientService
+//and ActivitLoan Service is wich used inturn returns the loan status
 public class ActivateLoanResultServiceImpl extends Service implements ActivateLoanResultService{
 
     private final IBinder localBinder = new ActivateLoanResultServiceLocalBinder();

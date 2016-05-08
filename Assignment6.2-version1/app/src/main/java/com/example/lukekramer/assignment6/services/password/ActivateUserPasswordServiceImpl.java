@@ -13,6 +13,8 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateUse
 /**
  * Created by lukekramer on 08/05/16.
  */
+//Justification Im using bound service because this service is bound directly to the ActivateLoginService
+//and is used to create and hash a password
 public class ActivateUserPasswordServiceImpl extends Service implements ActivateUserPasswordService{
     private IBinder localBinder = new ActivateUserPasswordServiceLocalBinder();
     @Nullable

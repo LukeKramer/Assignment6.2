@@ -13,6 +13,8 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateUse
 /**
  * Created by lukekramer on 08/05/16.
  */
+//Justification Im using bound service because this service is bound directly to the ActivateLoginService
+//and is used Variables from the ActivateClientService to create a username
 public class ActivateUserNameServiceImpl extends Service implements ActivateUserNameService{
     private IBinder localBinder = new ActivateUserNameServiceLocalBinder();
     @Nullable

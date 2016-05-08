@@ -15,7 +15,10 @@ import com.example.lukekramer.assignment6.services.serviceinterfaces.ActivateLoa
 /**
  * Created by lukekramer on 06/05/16.
  */
+//Justification Im using bound service because the database is being accessed and affected directly
 public class ActivateLoanServiceImpl extends Service implements ActivateLoanService{
+
+
 
     private final IBinder localBinder = new ActivateLoanServiceLocalBinder();
     private LoanRepository loanRepository;
