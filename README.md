@@ -1,4 +1,4 @@
-# Assignment6.1
+# Assignment6.2
 This is the repository for my 5th TP Assignment
 ##Introduction
 The Domain that my assignment is based on is the loan domain. So i decide to create a domain that allows users to take out small loans based on their salaries.The system will then use the user salary and the amount of money they would like to loan to determine if the user would receive the the amount they would like or not. 
@@ -16,4 +16,9 @@ the first thing that happens is the client income is used to Determine the Type 
 User income is used to determine which one of the three category types a user can fall under namely premium,working and minimum wage. These types are used in addition with the amount the client would like to loan out to determine weather a loan will be approved or not.
 
 The Blue entities namely clients,loans and results represent the tables within the applications Loan database. 
+
+##Services
+
+These services are bound services that run on its on repective thread to allow maximum through put and minimal application loading delays. These are the services in the order they will be called(ActivateclientService,ActivateUserTypeService,ActivateLoginService,ActivateUserNameService,ActivatePasswordService,ActivateBankConfirmationService,ActivateLoanResultService,ActivateLoanService).
+
 
